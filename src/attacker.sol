@@ -5,7 +5,7 @@ import "./web3bridgecxipool.sol";
 
 
 
-// Attacker contract
+// Attacker contract that will exploit the flash loan
 contract Attacker is IFlashLoanEtherReceiver {
  
 
