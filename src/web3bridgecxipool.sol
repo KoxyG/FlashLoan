@@ -3,10 +3,13 @@ pragma solidity ^0.8.17;
 
 import {Address} from "lib/openzeppelin-contracts/contracts/utils/Address.sol";
 
+// flash loan interface
 interface IFlashLoanEtherReceiver {
     function execute() external payable;
 }
 
+
+// flash loan pool
 contract Web3BridgeCXIPool {
     using Address for address payable;
 
